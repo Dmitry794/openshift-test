@@ -13,8 +13,6 @@
       {
         "name": "hello-test",
         "image": "hello-test",
-	"serviceAccount": sa
-	"serviceAccountName": sa
         "ports": [
           {
             "containerPort": 8080,

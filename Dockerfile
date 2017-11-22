@@ -1,5 +1,6 @@
 FROM centos:7
 RUN touch /test.txt \
- && echo "ololo" > /test.txt
+ && echo "ololo" > /test.txt \
+ && echo "GOOD"
 
-CMD echo "OK"
+CMD /bin/bash
