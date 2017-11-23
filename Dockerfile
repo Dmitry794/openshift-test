@@ -1,8 +1,8 @@
-FROM scratch
+FROM centos/ruby-22-centos7
 
-RUN touch /test.txt \
- && echo "ololo" > /test.txt \
- && echo "GOOD"
+RUN ["echo", "OLOLO"]
+# && echo "ololo" > /test.txt \
+# && echo "GOOD"
 
 EXPOSE 22
 
