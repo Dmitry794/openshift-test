@@ -1,4 +1,4 @@
-FROM centos/ruby-22-centos7
+FROM centos:7
 USER default
 RUN ["echo", "OLOLO"]
 # && echo "ololo" > /test.txt \
