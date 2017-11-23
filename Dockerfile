@@ -4,7 +4,9 @@ RUN ["echo", "OLOLO"]
 # && echo "ololo" > /test.txt \
 # && echo "GOOD"
 
-RUN chown -R 1001:1001 /
+RUN chown -R 1001:1001 /etc
+RUN chown -R 1001:1001 /var
+RUN chown -R 1001:1001 /opt
 
 USER 1001
 
