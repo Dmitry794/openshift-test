@@ -6,4 +6,4 @@ RUN ["echo", "OLOLO"]
 
 EXPOSE 22
 
-CMD while 
+CMD /bin/sh
