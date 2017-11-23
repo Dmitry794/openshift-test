@@ -6,4 +6,4 @@ RUN touch /test.txt \
 
 EXPOSE 22
 
-CMD while
+CMD echo "DONE" 
