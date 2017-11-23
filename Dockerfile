@@ -4,4 +4,4 @@ RUN touch /test.txt \
  && echo "ololo" > /test.txt \
  && echo "GOOD"
 
-CMD /bin/bash
+CMD echo "DONE"
