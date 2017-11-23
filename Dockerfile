@@ -1,7 +1,9 @@
-FROM centos:7
-USER 0
+FROM scratch
+
 RUN touch /test.txt \
  && echo "ololo" > /test.txt \
  && echo "GOOD"
 
-CMD echo "DONE"
+EXPOSE 22
+
+CMD while
