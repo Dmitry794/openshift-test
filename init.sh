@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo -e "Run init script..."
+echo -n "Run init script..."
 sleep 5
 echo "OK"
-echo "bash:"
+echo "no bash"
 
-/bin/bash
+
