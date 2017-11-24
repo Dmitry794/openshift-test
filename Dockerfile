@@ -10,9 +10,6 @@ RUN echo "OK" \
 && chown -R 1001:1001 /usr \
 && chown -R 1001:1001 /bin 
 
-
-USER 1001
-
 EXPOSE 22
-
+USER 1001
 ENTRYPOINT ["/init.sh"]
