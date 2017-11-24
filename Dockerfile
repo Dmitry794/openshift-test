@@ -1,18 +1,18 @@
 FROM centos:centos7
 
-RUN ["echo", "OLOLO"]
-# && echo "ololo" > /test.txt \
-# && echo "GOOD"
+COPY init.sh /
 
-RUN chown -R 1001:1001 /etc
-RUN chown -R 1001:1001 /var
-RUN chown -R 1001:1001 /opt
+RUN echo "OK" \
+&& chmod +x /init.sh \
+&& chown -R 1001:1001 /etc \
+&& chown -R 1001:1001 /var \
+&& chown -R 1001:1001 /opt \
+&& chown -R 1001:1001 /usr \
+&& chown -R 1001:1001 /bin 
+
 
 USER 1001
 
-
-
-
 EXPOSE 22
 
-CMD /bin/bash
+ENTRYPOINT ["/init.sh"]
